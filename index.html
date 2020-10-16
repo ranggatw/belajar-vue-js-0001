@@ -11,9 +11,12 @@
 </head>
 <body>
   <div id="vue-app">
-    <h1>{{ greet('night')}}</h1>
-    <p>{{name}}</p>
-    <p>{{lastName}}</p>
+    <h1>Data Binding</h1>
+    <!-- Cara pertama -->
+    <a v-bind:href="website">Go to Google</a>
+    <br>
+    <input type="text" v-bind:value="name">
+    <p v-html="websitesTags"></p>
 
 
   </div>
